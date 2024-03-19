@@ -535,7 +535,7 @@ Transform:
   m_GameObject: {fileID: 596648094}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 6.1099997, z: 27.812}
+  m_LocalPosition: {x: 0, y: 9.11, z: 27.812}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -883,7 +883,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 1
-  m_FollowOffset: {x: 0, y: 4, z: -25}
+  m_FollowOffset: {x: 0, y: 7, z: -25}
   m_XDamping: 1
   m_YDamping: 0
   m_ZDamping: 1
@@ -1021,7 +1021,7 @@ Transform:
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 6.1099997, z: 27.812}
+  m_LocalPosition: {x: 0, y: 9.11, z: 27.812}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6617,6 +6617,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _transform: {fileID: 769690988}
+  _complexity: {fileID: 1475747399}
 --- !u!114 &1475747395
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6631,6 +6632,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: {fileID: 981983475}
   _record: {fileID: 368629427516973390, guid: 5d240f86505efd64492108461fad945e, type: 3}
+--- !u!114 &1475747399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1266961756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ee19945228098044b5e3377763a058d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1549225137
 GameObject:
   m_ObjectHideFlags: 0
@@ -12251,6 +12264,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 155680640}
     - target: {fileID: 2605002486103919505, guid: 4d458900e3eecbc418d4d7d05c8b8f6a, type: 3}
+      propertyPath: _complexity
+      value: 
+      objectReference: {fileID: 1475747399}
+    - target: {fileID: 2605002486103919505, guid: 4d458900e3eecbc418d4d7d05c8b8f6a, type: 3}
       propertyPath: _deathAudio
       value: 
       objectReference: {fileID: 50824783}
@@ -12353,11 +12370,14 @@ PrefabInstance:
       addedObject: {fileID: 1076289112}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 3212317914948967086, guid: 4d458900e3eecbc418d4d7d05c8b8f6a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1475747380}
+      insertIndex: 4
+      addedObject: {fileID: 1475747399}
+    - targetCorrespondingSourceObject: {fileID: 3212317914948967086, guid: 4d458900e3eecbc418d4d7d05c8b8f6a, type: 3}
+      insertIndex: 8
+      addedObject: {fileID: 1475747391}
     - targetCorrespondingSourceObject: {fileID: 3212317914948967086, guid: 4d458900e3eecbc418d4d7d05c8b8f6a, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1475747391}
+      addedObject: {fileID: 1475747380}
     - targetCorrespondingSourceObject: {fileID: 3212317914948967086, guid: 4d458900e3eecbc418d4d7d05c8b8f6a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1475747395}

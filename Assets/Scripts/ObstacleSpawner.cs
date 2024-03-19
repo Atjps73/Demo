@@ -23,7 +23,7 @@ public class ObstacleSpawner : MonoBehaviour
         ChangePosition(_point[_indexPoint]);
         Instantiate(_obstacle[_indexObstacle]);
 
-        if (_delay > 0.6f)
+        if (_delay > 0.7f)
 			_delay -= 0.005f;
 
         Start();

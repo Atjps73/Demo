@@ -3,19 +3,17 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     [SerializeField] private GameObject _armor;
+    [SerializeField] private Complexity _complexity;
     [SerializeField] private Death _death;
 
     private readonly Move _move = new Move();
+    private float _maxSpeed = 0.4f;
     private float _speed = 0.2f;
 	private bool _leftPosition = true;
 
 	private void FixedUpdate()
     {
-		if (_speed < 0.4f)
-		{
-			_speed += 0.00002f;
-		}
-
+		_complexity.Increasing(ref _speed, _maxSpeed);
 		transform.Translate(0, _speed, 0 * Time.deltaTime);
     }
 
